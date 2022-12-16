@@ -30,9 +30,9 @@ Some tasks accomplished in this project through the use of QGIS tools include:
    * Filtering shapefiles by building queries
 
 Some tasks accomplished in this project through the use of CLI tools include:
-   * Making curl requests to Mapbox's API's tu upload, download, and update data
-   * Working with Mapbox's tilesets CLI to upload, download, and update data
-   * Working with ndjson and geojson2ndjson CLI tools to convert data
+   * Making curl requests to [Mapbox's API's](https://docs.mapbox.com/mapbox-tiling-service/guides/) to upload, download, and update data
+   * Working with [Mapbox's tilesets CLI](https://github.com/mapbox/tilesets-cli/) to upload, download, and update data
+   * Working with [ndjson](https://www.npmjs.com/package/ndjson-cli) and [geojson2ndjson](https://www.npmjs.com/package/geojson2ndjson) CLI tools to convert data.
 
 ## How I made this mapping project
 
