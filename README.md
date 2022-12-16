@@ -56,7 +56,7 @@ I did this because toxins are **more likely** than the other causes of impairmen
 
 After finishing up my filtration of the waterway data, I'm left with a layer which shows us the North Carolina waterways which are specifically impaired by toxins. I finish this step by saving the temporary filterd layer as a geojson.
 
-Moving onto the toxic release data itself, I begin by adding the North Carolina-specific CSV file as a delimited text layer in QGIS, matching the point coordinates to the latitude and longitude columns provided in the CSV file. I then filter the records for waterborne releases only.
+Moving onto the toxic release data itself, I begin by adding the North Carolina-specific CSV file as a delimited text layer in QGIS, matching the point coordinates to the latitude and longitude columns provided in the CSV file. I then filter the records for waterborne releases only. *(I came back later to refactor the table for this layer in order to change the water release column to decimals, as it was not factored as a number. This was necessary to symbolize the water release data in a graduated way. In retrospect, doing this step at initial data entry would've been more efficient.)*
 
 ### Assess the Data
 
@@ -142,9 +142,9 @@ I really wanted to add the waterways layer to this project and highlight the imp
 
 #### Visualization with QGIS
 My visualization with QGIS required the following steps
-   * Style base layer (states layer)
+   * Style base layer (I used XYZ tiles - ESRI grey light for this)
    * Style assessed waterways layer
-   * Highlight impaired waterways
+    * Highlight impaired waterways with rules-based styling
    * Symbolize TRI sites within 1km buffer
     * Use color to indicate gradation (volume released)
    * Export map to print layout
