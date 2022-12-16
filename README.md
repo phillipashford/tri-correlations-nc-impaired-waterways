@@ -128,8 +128,15 @@ I'd initially attempted to upload my geojson of the river data as a dataset on M
 
    Upon troubleshooting this issue, I came across this same error issue on a fresh [Stackoverflow thread](https://stackoverflow.com/questions/74240677/how-do-i-upload-a-large-geojson-file-to-a-mapbox-dataset), that as of this writing has still been unanswered.
 
-##### An attempt using Tippecanoe
+##### An unsuccessful attempt to use Tippecanoe
 
-After three failed attempts to work around Mapbox's zoom extent limitations, I tried Mapbox's recommendation to use Tippecanoe. Here's how that process went.
+After three failed attempts to work around Mapbox's zoom extent limitations, I began the process of trying Mapbox's recommendation to use Tippecanoe. I quickly learned that Windows is not supported by the project. However I did find a [workaround](https://github.com/GISupportICRC/ArcGIS2Mapbox/#installing-tippecanoe-on-windows) for installing Windows. Unfortunately, I have run out of time to delve into workarounds within workarounds, and this particular path seems like it could compromise my working environment, so I will need to save this workaround for the future.
+
+#### Next steps after failing to overcome Mapbox's zoom extent limitations
+I really wanted to add the waterways layer to this project and highlight the impaired waterways. Unfortunately, I'm simply not going to be able to do that with Mapbox. And without the waterways layer on Mapbox, my map is going to lack crucial visual insights. So, I turned my attention to creating my visualization solely in QGIS. I am disappointed by this, as Mapbox is a really cool way to have dynamic visualization. Unfortunately my map will be static until I can overcome the zoom extent issues.
+
+#### 
+
+
 
 sk.eyJ1IjoicGhpbGxpcC1hc2hmb3JkIiwiYSI6ImNsYnFudjd4YTE0dzczcHFoaHIxa3hlaTUifQ.5z75eq0bzbFLnJY9Anv_4Q
