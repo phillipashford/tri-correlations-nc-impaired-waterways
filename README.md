@@ -14,6 +14,8 @@ QGIS 3.22
 
 Mapbox Studio
 
+Mapbox Tiling Service API's
+
 ## Why this project?
 
 I created this map to explore processing tools in QGIS, explore EPA datasets, and gain more familiarity with Mapbox's datasets, tilesets, and style tools.
@@ -28,6 +30,9 @@ Some tasks accomplished in this project through the use of QGIS tools include:
    * Filtering shapefiles by building queries
 
 Some tasks accomplished in this project through the use of CLI tools include:
+   * Making curl requests to Mapbox's API's tu upload, download, and update data
+   * Working with Mapbox's tilesets CLI to upload, download, and update data
+   * Working with ndjson and geojson2ndjson CLI tools to convert data
 
 ## How I made this mapping project
 
@@ -64,7 +69,7 @@ Now we have a selection of the TRI sites which are within 1 km of an impaired wa
 ### Visualizing the data
 
 What I wanted to show in my final visualization is a map of all of North Carolina that met the following specifications:
-   * Shows all *assessedd* waterways
+   * Shows all *assessed* waterways
    * Highlights impaired waterways
    * Shows all TRI sites in the 1 km buffer, symbolized in a graduated way to show the relative quantity of toxic releases at the site
 
@@ -135,7 +140,18 @@ After three failed attempts to work around Mapbox's zoom extent limitations, I b
 #### Next steps after failing to overcome Mapbox's zoom extent limitations
 I really wanted to add the waterways layer to this project and highlight the impaired waterways. Unfortunately, I'm simply not going to be able to do that with Mapbox. And without the waterways layer on Mapbox, my map is going to lack crucial visual insights. So, I turned my attention to creating my visualization solely in QGIS. I am disappointed by this, as Mapbox is a really cool way to have dynamic visualization. Unfortunately my map will be static until I can overcome the zoom extent issues.
 
-#### 
+#### Visualization with QGIS
+My visualization with QGIS required the following steps
+   * Style base layer (states layer)
+   * Style assessed waterways layer
+   * Highlight impaired waterways
+   * Symbolize TRI sites within 1km buffer
+    * Use color to indicate gradation (volume released)
+   * Export map to print layout
+   * Pull top ten entries from the attribute table
+    * Create chart to accompany map in print layout
+   * Export print layout
+
 
 
 
