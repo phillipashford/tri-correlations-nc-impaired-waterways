@@ -106,20 +106,16 @@ I was unsuccessful in using the [Mapbox Tilesets CLI tool](https://github.com/ma
    
    Upon further research I came across the following.
     MTS requires that you format tileset sources as line-delimited GeoJSON. If you upload your source as GeoJSON using the tilesets CLI, your source will be converted to the correct format.
-   As it turns out my geojson is already line delimited as I verified myself (see image below to understand the difference). Yet regardless of this, I **did** upload my source as a geojson using the tilesets CLI (and in fact re-uploaded via the same means to doublecheck myself and encountered the same error on attempting to publish), so I'm stumped as to why this error occurred. 
+   
+   However, I **did** upload my source as a geojson using the tilesets CLI (and in fact re-uploaded via the same means to doublecheck myself and encountered the same error on attempting to publish), so I'm stumped as to why this error occurred. 
 
-![](/images/geojson_formatting.png "")
+![Difference between geojson and newline delimted json](/images/geojson_formatting.png "Difference between geojson and newline delimted json")
 
-As another potential workaround I decided to attempt to upload my data as a dataset via Mapbox's Dataset API.
+Admittedly MTS is in beta. As another potential workaround I decided to attempt to upload my data as a dataset via Mapbox's Dataset API.
 
 ##### Unsuccessful attempt using Mapbox Dataset API
-I'd initially attempted to upload my geojson of the river data as a dataset on Mapbox studio but was met with the message that uploads were limited to 5 MB. I turned to the MTS API + tileset CLI as suggested by Mapbox. 
 
-Mapbox Maps Service
-Uploads API (Mapbox reports that it's not possible to adjust zoom extents with the Uploads API )
-Datasets API
-Mapbox Tiling Service (in beta)
-
+I'd initially attempted to upload my geojson of the river data as a dataset on Mapbox studio but was met with the message that uploads were limited to 5 MB. I turned to the MTS API + tileset CLI as suggested by Mapbox. After that unsuccessful attempt, I turned to the Dataset API as recommended by Mapbox as an alternative for larger file uploads. Here are the steps that required.
 
 * Update Mapbox token with datasets.write scope under Mapbox account settings
 * Use Mapbox Dataset API to upload geojson.
@@ -134,6 +130,6 @@ Mapbox Tiling Service (in beta)
 
 ##### An attempt using Tippecanoe
 
-After three failed attempts to work around Mapbox's zoom extent limitations, I decided to give one final try to a 
+After three failed attempts to work around Mapbox's zoom extent limitations, I tried Mapbox's recommendation to use Tippecanoe. Here's how that process went.
 
 sk.eyJ1IjoicGhpbGxpcC1hc2hmb3JkIiwiYSI6ImNsYnFudjd4YTE0dzczcHFoaHIxa3hlaTUifQ.5z75eq0bzbFLnJY9Anv_4Q
