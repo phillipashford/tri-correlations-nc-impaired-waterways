@@ -83,12 +83,12 @@ In order to upload the assessed waterways layer to Mapbox, I had to simplify the
 
 Unfortunately upon loading this file to Mapbox as a tileset and attempting to style it, I saw that the zoom extent was not the correct zoom extent I needed for my map.
 
-![](images/incorrect-zoom-extent.png "")
+![](images/incorrect-zoom-extent.png)
 
 ##### Unsuccessful attempt using QGIS
 So, I went back to QGIS and used the 'write vector tiles (MBtiles)' processing tool to create vector tiles to upload to Mapbox. I was able to specify my required zoom extents in the tool parameters before running it. The process seemed to complete correctly. Once I uploaded the tileset to Mapbox studio however, the tileset was not displayed on the map at the zoom necessary for my project (5-9) even though Mapbox reported that my zoom extent was within my needs.
 
-![](/images/correct-zoom-extent.png "")
+![](/images/correct-zoom-extent.png)
 
 I attempted this repeatedly with the same result.
 
@@ -114,7 +114,7 @@ I was unsuccessful in using the [Mapbox Tilesets CLI tool](https://github.com/ma
    
    However, I **did** upload my source as a geojson using the tilesets CLI (and in fact re-uploaded via the same means to doublecheck myself and encountered the same error on attempting to publish), so I'm stumped as to why this error occurred. 
 
-![Difference between geojson and newline delimted json](/images/geojson_formatting.png "Difference between geojson and newline delimted json")
+![Difference between geojson and newline delimted json](/images/geojson_formatting.png)
 
 Admittedly MTS is in beta. As another potential workaround I decided to attempt to upload my data as a dataset via Mapbox's Dataset API.
 
@@ -152,7 +152,7 @@ My visualization with QGIS required the following steps
     * Create chart to accompany map in print layout
    * Export print layout
 
-![](/images/nc_tri_impaired_waterways_1200px.png "")
+![](/images/nc_tri_impaired_waterways_1200px.png)
 
 ### Embedding Visualization
 After exporting the print layout, I followed the next steps to embed the image in a webpage which is hosted on Github.
