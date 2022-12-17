@@ -128,10 +128,10 @@ I'd initially attempted to upload my geojson of the river data as a dataset on M
   -d @my_file.geojson \
   --header "Content-Type:application/json"
 
-   The response I received was an error:
+The response I received was an error:
     {"message":"request entity too large"}
 
-   Upon troubleshooting this issue, I came across this same error issue on a fresh [Stackoverflow thread](https://stackoverflow.com/questions/74240677/how-do-i-upload-a-large-geojson-file-to-a-mapbox-dataset), that as of this writing has still been unanswered.
+Upon troubleshooting this issue, I came across this same error issue on a fresh [Stackoverflow thread](https://stackoverflow.com/questions/74240677/how-do-i-upload-a-large-geojson-file-to-a-mapbox-dataset), that as of this writing has still been unanswered.
 
 ##### An unsuccessful attempt to use Tippecanoe
 
