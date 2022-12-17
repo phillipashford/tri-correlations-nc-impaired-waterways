@@ -83,7 +83,7 @@ In order to upload the assessed waterways layer to Mapbox, I had to simplify the
 
 Unfortunately upon loading this file to Mapbox as a tileset and attempting to style it, I saw that the zoom extent was not the correct zoom extent I needed for my map.
 
-![](images/incorrect-zoom-extent.png)
+![](/images/incorrect-zoom-extent.png)
 
 ##### Unsuccessful attempt using QGIS
 So, I went back to QGIS and used the 'write vector tiles (MBtiles)' processing tool to create vector tiles to upload to Mapbox. I was able to specify my required zoom extents in the tool parameters before running it. The process seemed to complete correctly. Once I uploaded the tileset to Mapbox studio however, the tileset was not displayed on the map at the zoom necessary for my project (5-9) even though Mapbox reported that my zoom extent was within my needs.
