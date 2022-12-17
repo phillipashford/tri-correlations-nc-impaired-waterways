@@ -88,7 +88,7 @@ Unfortunately upon loading this file to Mapbox as a tileset and attempting to st
 ##### Unsuccessful attempt using QGIS
 So, I went back to QGIS and used the 'write vector tiles (MBtiles)' processing tool to create vector tiles to upload to Mapbox. I was able to specify my required zoom extents in the tool parameters before running it. The process seemed to complete correctly. Once I uploaded the tileset to Mapbox studio however, the tileset was not displayed on the map at the zoom necessary for my project (5-9) even though Mapbox reported that my zoom extent was within my needs.
 
-![](/images/correct-zoom-extent.png)
+![](images/correct-zoom-extent.png)
 
 I attempted this repeatedly with the same result.
 
