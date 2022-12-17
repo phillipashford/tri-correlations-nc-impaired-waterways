@@ -95,7 +95,7 @@ I attempted this repeatedly with the same result.
 Afterwards I followed Mapbox's suggestion to use their Mapbox Tiling Service. 
 
 ##### Unsuccessful attempt using Mapbox Tiling Service (MTS) API
-I was unsuccessful in using the [Mapbox Tilesets CLI tool](https://github.com/mapbox/tilesets-cli/) in tandem with the [MTS API](https://docs.mapbox.com/mapbox-tiling-service/guides/) to alter the zoom extent. Here are the steps I took so do so.
+I was ultimately unsuccessful in using the [Mapbox Tilesets CLI tool](https://github.com/mapbox/tilesets-cli/) in tandem with the [MTS API](https://docs.mapbox.com/mapbox-tiling-service/guides/) to alter the zoom extent but here are the steps I took in  my attempt.
 
 * Create mapbox token with tilesets.read, tilesets.write, and tilesets.list scopes under Mapbox account settings
 * Install tileset CLI in terminal
