@@ -155,7 +155,7 @@ My visualization with QGIS required the following steps
 ![](/images/nc_tri_impaired_waterways_1200px.png)
 
 ### Embedding Visualization
-After exporting the print layout, I followed the next steps to embed the image in a webpage which is hosted on Github.
+After exporting the print layout, I followed the next steps to embed the image in a webpage which is hosted [here](https://phillipashford.github.io/tri-correlations-nc-impaired-waterways/) on Github.
 
 * Edit index.html to reference map in images folder
 * Edit text of index.html
