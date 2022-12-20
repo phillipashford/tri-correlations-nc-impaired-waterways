@@ -111,10 +111,11 @@ I was ultimately unsuccessful in using the [Mapbox Tilesets CLI tool](https://gi
    
  Upon further research I came across the following:
   `MTS requires that you format tileset sources as line-delimited GeoJSON. If you upload your  source as GeoJSON using the tilesets CLI, your source will be converted to the correct format.`
-   
-   However, I **did** upload my source as a geojson using the tilesets CLI (and in fact re-uploaded via the same means to doublecheck myself and encountered the same error on attempting to publish), so I'm stumped as to why this error occurred. 
 
 ![Difference between geojson and newline delimted json](/images/geojson_formatting.PNG)
+*Difference between geojson and newline delimted geojson*
+
+   However, I **did** upload my source as a geojson using the tilesets CLI (and in fact re-uploaded via the same means to doublecheck myself and encountered the same error on attempting to publish), so I'm stumped as to why this error occurred. 
 
 Admittedly MTS is in beta. As another potential workaround I decided to attempt to upload my data as a dataset via Mapbox's Dataset API.
 
