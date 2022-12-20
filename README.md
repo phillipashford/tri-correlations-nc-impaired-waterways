@@ -106,10 +106,10 @@ I was ultimately unsuccessful in using the [Mapbox Tilesets CLI tool](https://gi
 * validate recipe via Mapbox tilesets CLI
 * Update tileset recipe via Mapbox tilesets CLI
 * Publish tileset to start job process (render data into vector tiles) via MTS API
-   After several attempts, I was unable to overcome the following error from Mapbox
+ After several attempts, I was unable to overcome the following error from Mapbox
     No GeoJSON features processed. Make sure your GeoJSON is line-delimited.
    
-   Upon further research I came across the following.
+ Upon further research I came across the following.
     MTS requires that you format tileset sources as line-delimited GeoJSON. If you upload your source as GeoJSON using the tilesets CLI, your source will be converted to the correct format.
    
    However, I **did** upload my source as a geojson using the tilesets CLI (and in fact re-uploaded via the same means to doublecheck myself and encountered the same error on attempting to publish), so I'm stumped as to why this error occurred. 
