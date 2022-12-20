@@ -109,7 +109,7 @@ I was ultimately unsuccessful in using the [Mapbox Tilesets CLI tool](https://gi
  After several attempts, I was unable to overcome the following error from Mapbox
     `No GeoJSON features processed. Make sure your GeoJSON is line-delimited.`
    
- Upon further research I came across the following.
+ Upon further research I came across the following:
   `MTS requires that you format tileset sources as line-delimited GeoJSON. If you upload your  source as GeoJSON using the tilesets CLI, your source will be converted to the correct format.`
    
    However, I **did** upload my source as a geojson using the tilesets CLI (and in fact re-uploaded via the same means to doublecheck myself and encountered the same error on attempting to publish), so I'm stumped as to why this error occurred. 
@@ -124,12 +124,14 @@ I'd initially attempted to upload my geojson of the river data as a dataset on M
 
 * Update Mapbox token with datasets.write scope under Mapbox account settings
 * Use Mapbox Dataset API to upload geojson.
-    curl -X POST "https://api.mapbox.com/datasets/v1/${MAPBOX_USERNAME}?access_token=${MAPBOX_ACCESS_TOKEN}" \
+ ```
+ curl -X POST "https://api.mapbox.com/datasets/v1/${MAPBOX_USERNAME}?access_token=${MAPBOX_ACCESS_TOKEN}" \
   -d @my_file.geojson \
   --header "Content-Type:application/json"
+  ```
 
 The response I received was an error:
-    {"message":"request entity too large"}
+    `{"message":"request entity too large"}`
 
 Upon troubleshooting this issue, I came across this same error issue on a fresh [Stackoverflow thread](https://stackoverflow.com/questions/74240677/how-do-i-upload-a-large-geojson-file-to-a-mapbox-dataset), that as of this writing has still been unanswered.
 
