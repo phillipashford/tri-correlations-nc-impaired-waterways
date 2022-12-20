@@ -137,7 +137,7 @@ Upon troubleshooting this issue, I came across this same error issue on a fresh 
 
 ##### An unsuccessful attempt to use Tippecanoe
 
-After three failed attempts to work around Mapbox's zoom extent limitations, I began the process of trying Mapbox's recommendation to use Tippecanoe. I quickly learned that Windows is not supported by the project. However I did find a [workaround](https://github.com/GISupportICRC/ArcGIS2Mapbox/#installing-tippecanoe-on-windows) for installing Windows. Unfortunately, I have run out of time to delve into workarounds within workarounds, and this particular path seems like it could compromise my working environment, so I will need to save this workaround for the future.
+After three failed attempts to work around Mapbox's zoom extent limitations, I began the process of trying Mapbox's recommendation to use Tippecanoe. I quickly learned that Windows is not supported by the project. However I did find a [workaround](https://github.com/GISupportICRC/ArcGIS2Mapbox/#installing-tippecanoe-on-windows) for installing on Windows. Unfortunately, I have run out of time to delve into workarounds within workarounds, and this particular path seems like it could compromise my working environment, so I will need to save this workaround for the future.
 
 #### Next steps after failing to overcome Mapbox's zoom extent limitations
 I really wanted to add the waterways layer to this project and highlight the impaired waterways. Unfortunately, I'm simply not going to be able to do that with Mapbox. And without the waterways layer on Mapbox, my map is going to lack crucial visual insights. So, I turned my attention to creating my visualization solely in QGIS. I am disappointed by this, as Mapbox is a really cool way to have dynamic visualization. Unfortunately my map will be static until I can overcome the zoom extent issues.
@@ -146,12 +146,12 @@ I really wanted to add the waterways layer to this project and highlight the imp
 My visualization with QGIS required the following steps
    * Style base layer (I used XYZ tiles - ESRI grey light for this)
    * Style assessed waterways layer
-    * Highlight impaired waterways with rules-based styling
+       * Highlight impaired waterways with rules-based styling
    * Symbolize TRI sites within 1km buffer
-    * Use color to indicate gradation (volume released)
+       * Use color to indicate gradation (volume released)
    * Export map to print layout
    * Pull top ten entries from the attribute table
-    * Create chart to accompany map in print layout
+       * Create chart to accompany map in print layout
    * Export print layout
 
 ![](/images/nc_tri_impaired_waterways_1200px.png)
@@ -161,5 +161,5 @@ After exporting the print layout, I followed the next steps to embed the image i
 
 * Edit index.html to reference map in images folder
 * Edit text of index.html
- * Add data links
- * Edit links to point to proper documentation/repository
+   * Add data links
+   * Edit links to point to proper documentation/repository
