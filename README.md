@@ -1,6 +1,13 @@
 # Correlating toxic release inventory data to North Carolina's known impaired waterways using QGIS and Mapbox Studio
 
-## Data Sources
+## Contents
+[Data Sources](#data)<br>
+[Tools](#tools)<br>
+[Why this project?](#why)<br>
+[How I made this mapping project](#how)<br>
+[Questions asked](#questions)<br>
+
+## <h2 id="data">Data Sources</h2>
 
 * Toxic release inventory data (2021) was gathered from the Environmental Protection Agency's website at https://www.epa.gov/toxics-release-inventory-tri-program/tri-basic-data-files-calendar-years-1987-present
 
@@ -8,7 +15,7 @@
 
 * With these links, an individual can easily gather data specific to any other state in order to replicate these findings for said state.
 
-## Tools
+## <h2 id="tools">Tools</h2>
 
 QGIS 3.22
 
@@ -16,7 +23,7 @@ Mapbox Studio
 
 Mapbox Tiling Service API's
 
-## Why this project?
+## <h2 id="why">Why this project?</h2>
 
 I created this map to explore processing tools in QGIS, explore EPA datasets, and gain more familiarity with Mapbox's datasets, tilesets, and style tools.
 
@@ -34,9 +41,9 @@ Some tasks accomplished in this project through the use of CLI tools include:
    * Working with [Mapbox's tilesets CLI](https://github.com/mapbox/tilesets-cli/) to upload, download, and update data
    * Working with [ndjson](https://www.npmjs.com/package/ndjson-cli) and [geojson2ndjson](https://www.npmjs.com/package/geojson2ndjson) CLI tools to convert data.
 
-## How I made this mapping project
+## <h2 id="how">How I made this mapping project</h2>
 
-### Questions Asked
+### <h3 id="questions">Questions Asked</h3>
 
 Where are the known impaired waterways?
     Where are the known impaired waterways that have been assessed and are reported to contain toxins?
