@@ -5,19 +5,19 @@
 [Tools](#tools)<br>
 [Why this project?](#why)<br>
 [How I made this mapping project](#how)<br>
-  [Questions asked](#questions)<br>
-  [Examine and Filter Data](#examine)<br>
-  [Assess the Data](#assess)<br>
-  [Visualizing the Data](#visualize)<br>
-    [Working around Mapbox's upload limitations](#workaround)<br>
-    [Attempts to work around Mapbox's zoom extent limitations](#zoom)<br>
-      [Unsuccessful attempt using QGIS](#qgis)<br>
-      [Unsuccessful attempt using Mapbox Tiling Service (MTS) API](#mts)<br>
-      [Unsuccessful attempt using Mapbox Dataset API](#data-api)<br>
-      [An unsuccessful attempt to use Tippecanoe](#tippecanoe)<br>
-     [Next steps after failing to overcome Mapbox's zoom extent limitations](#next-steps)<br>
-  [Visualization with QGIS](#vis-qgis)<br>
-  [Embedding Visualization](#embed)<br>
+    [Questions asked](#questions)<br>
+        [Examine and Filter Data](#examine)<br>
+    [Assess the Data](#assess)<br>
+    [Visualizing the Data](#visualize)<br>
+      [Working around Mapbox's upload limitations](#workaround)<br>
+        [Attempts to work around Mapbox's zoom extent limitations](#zoom)<br>
+        [Unsuccessful attempt using QGIS](#qgis)<br>
+        [Unsuccessful attempt using Mapbox Tiling Service (MTS) API](#mts)<br>
+        [Unsuccessful attempt using Mapbox Dataset API](#data-api)<br>
+        [An unsuccessful attempt to use Tippecanoe](#tippecanoe)<br>
+      [Next steps after failing to overcome Mapbox's zoom extent limitations](#next-steps)<br>
+    [Visualization with QGIS](#vis-qgis)<br>
+    [Embedding Visualization](#embed)<br>
     
 ## <h2 id="data">Data Sources</h2>
 
