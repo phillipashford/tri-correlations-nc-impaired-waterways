@@ -25,7 +25,7 @@
 
 * Waterway data (2022) was gathered from the Environmental Protection Agency's website at https://www.epa.gov/waterdata/waters-geospatial-data-downloads#ATTAINSWaterQualityAssessmentGISDataset
 
-* With these links, an individual can easily gather data specific to any other state in order to replicate these findings for said state.
+* With these links, an individual may be able to easily gather data specific to any other state in order to replicate these findings for said state. Some states are not included in the dataset.
 
 ## <h2 id="tools">Tools</h2>
 
